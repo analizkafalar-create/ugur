@@ -1,0 +1,6 @@
+{
+  "name": "TerraScan - Uydu Yeraltı Anomali Radarı",
+  "description": "Veldscan tabanlı uydu uzaktan algılama, yeraltı anomali tespiti, metal/mineral analizi, 2B/3B yeraltı modelleme ve koordinat tarama platformu.",
+  "requestFramePermissions": ["geolocation", "camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

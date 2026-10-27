@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad512" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0c1222"/>
+      <stop offset="50%" stop-color="#070c18"/>
+      <stop offset="100%" stop-color="#03060c"/>
+    </linearGradient>
+
+    <linearGradient id="pulseCyan512" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <linearGradient id="greenLayer512" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#16a34a"/>
+    </linearGradient>
+    <linearGradient id="soilLayer512" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a16207"/>
+      <stop offset="100%" stop-color="#713f12"/>
+    </linearGradient>
+    <linearGradient id="clayLayer512" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#9a3412"/>
+    </linearGradient>
+    <linearGradient id="slateLayer512" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="bedrockLayer512" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#090d16"/>
+    </linearGradient>
+
+    <linearGradient id="probeGrad512" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="116" fill="url(#bgGrad512)" stroke="#1e293b" stroke-width="4"/>
+
+  <!-- Geological Earth Strata -->
+  <g id="earth-strata">
+    <path d="M70,270 Q140,240 200,280 Q256,325 312,280 Q372,240 442,270 L442,340 Q410,375 256,375 Q102,375 70,340 Z" fill="url(#bedrockLayer512)"/>
+    <path d="M70,250 Q140,225 200,265 Q256,308 312,265 Q372,225 442,250 L442,320 Q400,355 256,355 Q112,355 70,320 Z" fill="url(#slateLayer512)"/>
+    <path d="M70,230 Q140,208 200,250 Q256,292 312,250 Q372,208 442,230 L442,298 Q390,335 256,335 Q122,335 70,298 Z" fill="url(#clayLayer512)"/>
+    <path d="M70,215 Q140,195 200,235 Q256,276 312,235 Q372,195 442,215 L442,275 Q380,315 256,315 Q132,315 70,275 Z" fill="url(#soilLayer512)"/>
+    <path d="M70,205 Q140,185 200,224 Q256,262 312,224 Q372,185 442,205 L442,248 Q372,228 312,266 Q256,302 200,266 Q140,228 70,248 Z" fill="url(#greenLayer512)"/>
+  </g>
+
+  <!-- Radar Waves -->
+  <g id="radar-pulses" fill="none" stroke="url(#pulseCyan512)" stroke-linecap="round">
+    <path d="M228,198 A 30 30 0 0 0 284,198" stroke-width="7" opacity="0.95"/>
+    <path d="M214,216 A 48 48 0 0 0 298,216" stroke-width="7" opacity="0.9"/>
+    <path d="M198,236 A 68 68 0 0 0 314,236" stroke-width="7.5" opacity="0.85"/>
+    <path d="M182,258 A 88 88 0 0 0 330,258" stroke-width="8" opacity="0.8"/>
+  </g>
+
+  <!-- T-Shaped Probe -->
+  <g id="probe" fill="url(#probeGrad512)">
+    <rect x="122" y="68" width="268" height="46" rx="14" />
+    <path d="M230,114 L282,114 L282,168 L256,192 L230,168 Z" />
+  </g>
+
+  <!-- "TerraScan" Typography -->
+  <g id="brand-text" transform="translate(256, 442)">
+    <text text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="58" letter-spacing="-1">
+      <tspan fill="#ffffff">Terra</tspan>
+      <tspan fill="#38bdf8">Scan</tspan>
+    </text>
+  </g>
+</svg>
